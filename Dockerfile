@@ -1,7 +1,4 @@
 FROM gitpod/workspace-full
-
+USER root
 # add your tools here
-RUN apt-get update --fix-missing \
-    && apt-get install -y graphviz
-
-USER gitpod
+RUN apt-get update && apt-get install -y graphviz
